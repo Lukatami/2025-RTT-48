@@ -95,11 +95,13 @@ body {
 .sectionBar {
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
+  justify-content:flex-start;
+  align-items: center;
   width: auto;
   height: 20px;
   border: .1px solid #373737;
   background-color: #373737;
+  gap: 10px;
   
 }
 
@@ -162,7 +164,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #66a23c;
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 #rightArrowCircleBlue {
@@ -177,7 +179,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #45a3d2;
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 .personBrief {
@@ -209,12 +211,13 @@ h2 {
   color: #f5f6fa;
 }
 
-h3 {
+#sectionTitle {
     width: auto;
     height: auto;
     text-transform: uppercase;
     color: #f5f6fa;
-    border: .1px solid white;
+    font-size: small;
+    font-weight: 700;
 }
 
 #personOccupation {
