@@ -1,0 +1,142 @@
+body {
+    background-color: beige;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.resumeMain {
+    background-color: #282828;
+    color: #636363;
+    padding: 20px;
+    font-family: Lato;
+    font-size: small;
+    font-weight: 700;
+}
+
+.person {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    
+    
+}
+
+#personPhoto {
+    border: 3px solid #313738;
+    border-radius: 5% ;
+    object-fit: contain;
+    width: 15%;
+    position: relative;
+    transform: scale(-1, 1);
+}
+
+.personBrief {
+    width: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    font-weight: 900;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    white-space: nowrap;
+    padding-top: 20px;
+    position: relative;
+
+}
+
+.personBrief>#personName {
+    width: auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #F5F2F2;
+    
+}
+
+#personOccupation {
+    font-size: 15px;
+    color: #4887b4;
+}
+
+#personDetails {
+    height: 20px;
+    position: relative;
+    flex: auto;
+    align-content: center;
+    white-space: nowrap;
+}
+
+a {
+    color: #4887b4;
+}
+
+th {
+    text-align: right;
+    color: #F5F2F2;
+    
+}
+
+td {
+    text-align: left;   
+}
+
+
