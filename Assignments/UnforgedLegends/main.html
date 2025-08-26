@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="mainGridStyle.css">
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mainGridStyle.css" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="signOptions">
+        <a href="">Sign In</a>
+        <button><a href="">Sign Up</a></button>
+      </div>
+      <div class="mainScreen">
+        <img
+          id="mainLogo"
+          src="images/logoBlack.png"
+          alt="Unforged Legends Logo"
+        />
+        <div class="mainMenu">
+          <button class="mainMenuButton" id="createChar">
+            Create Character
+          </button>
+          <button class="mainMenuButton" id="locations">Locations</button>
+          <button class="mainMenuButton" id="bestiary">Bestiary</button>
+          <button class="mainMenuButton" id="encyclopedia">Encyclopedia</button>
+        </div>
+        <div class="hint">
+          Hint:
+          <div id="randomHint">Berserker class can use two weapons</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

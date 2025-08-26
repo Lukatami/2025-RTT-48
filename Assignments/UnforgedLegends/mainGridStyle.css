@@ -1,0 +1,61 @@
+.cinzel-font {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    background-color: black;
+    display: block;
+    color: wheat;
+    text-shadow: 1px 1px 1px rgb(179, 173, 173);
+    padding: 5%;
+    font-family: Cinzel;
+    font-weight: 500;
+    
+}
+
+.mainScreen {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(/Assignments/UnforgedLegends/images/stonePattern.jpg);
+    background-size: 100%;
+    
+}
+
+.signOptions {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.hint {
+    position: absolute;
+    display: flex;
+    transform: translate(20%);
+    bottom: 0;
+}
+
+#carouselExample {
+    padding: 50px;
+}
+
+button {
+    background-color: rgb(94, 87, 87);
+    border-color: rgb(34, 31, 31);
+    border-radius: 10%;
+    color: rgb(179, 173, 173);
+    font-family: Cinzel;
+    font-weight: 700;
+}
+
+a {
+    color: rgb(179, 173, 173);
+}
