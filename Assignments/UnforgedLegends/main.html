@@ -38,26 +38,60 @@
   <body>
     <div>
       <div class="signOptions">
-        <a href="">Sign In</a>
+        <a href="/Assignments/UnforgedLegends/signIn.html">Sign In</a>
         <button><a href="">Sign Up</a></button>
       </div>
       <div class="mainScreen">
+        <div id="dropDownIcon">
+          <img
+            id="menu-icon"
+            src="/Assignments/UnforgedLegends/images/logoPlain.png"
+            height="100"
+            width="100"
+          />
+          <ul id="collapse-menu">
+            <li>
+              <a href="/Assignments/UnforgedLegends/main.html"> Main Menu </a>
+            </li>
+            <li>
+              <a href="/Assignments/UnforgedLegends/charConstructor.html">
+                Create Character
+              </a>
+            </li>
+            <li>
+              <a href="/Assignments/UnforgedLegends/locations.html">
+                Locations
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <img
           id="mainLogo"
           src="images/logoBlack.png"
           alt="Unforged Legends Logo"
         />
         <div class="mainMenu">
-          <button class="mainMenuButton" id="createChar">
-            Create Character
+          <button
+            class="mainMenuButton"
+            id="createChar"
+            onclick="location.href='charConstructor.html'"
+          >
+            <a>Create Character</a>
           </button>
-          <button class="mainMenuButton" id="locations">Locations</button>
+          <button
+            class="mainMenuButton"
+            id="locations"
+            onclick="location.href='locations.html'"
+          >
+            Locations
+          </button>
           <button class="mainMenuButton" id="bestiary">Bestiary</button>
           <button class="mainMenuButton" id="encyclopedia">Encyclopedia</button>
         </div>
         <div class="hint">
           Hint:
-          <div id="randomHint">Berserker class can use two weapons</div>
+          <div id="randomHint">&emsp;Barbarian class can use two weapons</div>
         </div>
       </div>
     </div>

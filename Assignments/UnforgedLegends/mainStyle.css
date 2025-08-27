@@ -1,6 +1,5 @@
 #mainLogo {
-  padding: 10px;
-  width: 350px;
+  width: 300px;
   margin: auto;
   display: grid;
 }
@@ -11,10 +10,4 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.mainMenuButton {
-  width: 300px;
-  height: 50px;
-  margin: 1%;
 }

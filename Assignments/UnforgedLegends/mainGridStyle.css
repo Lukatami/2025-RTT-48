@@ -8,9 +8,10 @@
 body {
   background-color: black;
   display: block;
-  color: wheat;
-  text-shadow: 1px 1px 1px rgb(179, 173, 173);
-  padding: 5%;
+  justify-items: center;
+  color: rgb(255, 243, 243);
+  text-shadow: 1px 1px 1px rgb(6, 6, 6);
+  padding: 10px;
   font-family: Cinzel;
   font-weight: 500;
 }
@@ -19,17 +20,18 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: auto;
+  width: 600px;
   height: 600px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-image: url(/Assignments/UnforgedLegends/images/stonePattern.jpg);
   background-size: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 .signOptions {
   display: flex;
-  justify-content: end;
+  position: relative;
+  justify-content: flex-end;
   padding-bottom: 10px;
   gap: 10px;
 }
@@ -37,26 +39,67 @@ body {
 .hint {
   position: absolute;
   display: flex;
-  top: 50%;
-  left: 50%;
   text-wrap: nowrap;
-  transform: translate(-50%, 90%);
   bottom: 0;
 }
 
 #carouselExample {
   padding: 50px;
+  width: 400px;
+  height: 350px;
 }
 
 button {
   background-color: rgb(94, 87, 87);
   border-color: rgb(34, 31, 31);
   border-radius: 10%;
-  color: rgb(179, 173, 173);
+  color: rgb(255, 243, 243);
+  text-shadow: 1px 1px 1px rgb(6, 6, 6);
   font-family: Cinzel;
   font-weight: 700;
 }
 
 a {
-  color: rgb(179, 173, 173);
+  color: rgb(255, 243, 243);
+  text-shadow: 1px 1px 1px rgb(6, 6, 6);
+}
+
+.carousel-control-prev {
+  align-self: center;
+}
+
+#dropDownIcon {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+#collapse-menu {
+  font-size: x-small;
+  transition: transform 0.3s;
+  transform-origin: top;
+  transition-delay: 0.2s;
+  &:not(:hover) {
+    transform: scaleY(0);
+  }
+}
+
+#menu-icon:hover ~ #collapse-menu {
+  transform: scaleY(1);
+}
+
+.signIn {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mainMenuButton {
+  width: 300px;
+  height: 50px;
+  margin: 1%;
 }
