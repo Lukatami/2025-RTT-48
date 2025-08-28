@@ -29,7 +29,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="mainGridStyle.css" />
-    <link rel="stylesheet" href="charConstructorStyle.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
@@ -39,7 +38,9 @@
     <div>
       <div class="signOptions">
         <a href="/Assignments/UnforgedLegends/signIn.html">Sign In</a>
-        <button><a href="">Sign Up</a></button>
+        <button>
+          <a href="/Assignments/UnforgedLegends/signUp.html">Sign Up</a>
+        </button>
       </div>
       <div class="mainScreen">
         <div id="dropDownIcon">
@@ -55,7 +56,7 @@
             </li>
             <li>
               <a href="/Assignments/UnforgedLegends/charConstructor.html">
-                Create Character
+                Characters
               </a>
             </li>
             <li>
@@ -67,33 +68,341 @@
         </div>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="/Assignments/UnforgedLegends/images/charBarbarian.jpg"
-                class="d-block w-100"
-                alt="charBarbarian"
-              />
+            <div>
+              <div class="carousel-item active">
+                <div>
+                  <img
+                    src="/Assignments/UnforgedLegends/images/charBarbarian.jpg"
+                    class="d-block w-100"
+                    alt="charBarbarian"
+                  />
+                  <div
+                    style="
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      gap: 10px;
+                    "
+                  >
+                    <table class="charTable">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Strength</th>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Agility</th>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Intellect</th>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Luck</th>
+                          <td>10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="charTable">
+                      <tbody>
+                        <tr>
+                          <th scope="row">HP</th>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mana</th>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Energy</th>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div style="display: flex; gap: 3px">
+                              <div class="skill" id="dualWeaponsSkill">
+                                <img
+                                  src="/Assignments/UnforgedLegends/images/dualWeaponsSkill.ico"
+                                  alt=""
+                                /><span class="tooltiptext"
+                                  >Dual Weapons: Barbarian able use two
+                                  one-handed weapons in the same time</span
+                                >
+                              </div>
+                              <div class="skill" id="bloodlustSkill">
+                                <img
+                                  src="/Assignments/UnforgedLegends/images/bloodlustSkill.ico"
+                                  alt=""
+                                /><span class="tooltiptext"
+                                  >Bloodlust: The chance of a critical hit increases
+                                  proportionally to the amount of health
+                                  lost</span
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-size: small">
+                      He grew up among swords and bonfires, knowing neither
+                      peace nor tranquility. Every step he took was in the
+                      bloody ashes of battle, every breath he took was a
+                      challenge to fate. A barbarian who lived his life in
+                      battle, he himself became their eternal shadow.
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="/Assignments/UnforgedLegends/images/charArcher.jpg"
-                class="d-block w-100"
-                alt="charArcher"
-              />
+            <div>
+              <div class="carousel-item">
+                <img
+                  src="/Assignments/UnforgedLegends/images/charArcher.jpg"
+                  class="d-block w-100"
+                  alt="charArcher"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Strength</th>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Agility</th>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Intellect</th>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Luck</th>
+                        <td>10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">HP</th>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mana</th>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Energy</th>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div style="display: flex; gap: 3px">
+                            <div class="skill" id="sharpEyeSkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/sharpEyeSkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Sharp Eye: Increases hit chance by 10%</span
+                              >
+                            </div>
+                            <div class="skill" id="increaseAgilitySkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/increaseAgilitySkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Increase Agility: Passively increases Agility
+                                by 5</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <span style="font-size: small">
+                    He grew up among swords and bonfires, knowing neither peace
+                    nor tranquility. Every step he took was in the bloody ashes
+                    of battle, every breath he took was a challenge to fate. A
+                    barbarian who lived his life in battle, he himself became
+                    their eternal shadow.
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="/Assignments/UnforgedLegends/images/charRogue.jpg"
-                class="d-block w-100"
-                alt="charRogue"
-              />
+            <div>
+              <div class="carousel-item">
+                <img
+                  src="/Assignments/UnforgedLegends/images/charRogue.jpg"
+                  class="d-block w-100"
+                  alt="charRogue"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Strength</th>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Agility</th>
+                        <td>15</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Intellect</th>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Luck</th>
+                        <td>15</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">HP</th>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mana</th>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Energy</th>
+                        <td>30</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div style="display: flex; gap: 3px">
+                            <div class="skill" id="sneakyStealSkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/sneakyStealSkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Sneaky Steal: The chance of a successful theft is increased
+                                by 10%</span
+                              >
+                            </div>
+                            <div class="skill" id="stealthSkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/stealthSkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Twillight cover: During twilight, the character's visibility is
+                                the same as at night</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <span style="font-size: small">
+                    He grew up among swords and bonfires, knowing neither peace
+                    nor tranquility. Every step he took was in the bloody ashes
+                    of battle, every breath he took was a challenge to fate. A
+                    barbarian who lived his life in battle, he himself became
+                    their eternal shadow.
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="/Assignments/UnforgedLegends/images/charWizzard.jpg"
-                class="d-block w-100"
-                alt="charWizzard"
-              />
+            <div>
+              <div class="carousel-item">
+                <img
+                  src="/Assignments/UnforgedLegends/images/charWizzard.jpg"
+                  class="d-block w-100"
+                  alt="charWizzard"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Strength</th>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Agility</th>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Intellect</th>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Luck</th>
+                        <td>10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="charTable">
+                    <tbody>
+                      <tr>
+                        <th scope="row">HP</th>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mana</th>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Energy</th>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div style="display: flex; gap: 3px">
+                            <div class="skill" id="dualWeaponsSkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/extraLuckSkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Under construction</span
+                              >
+                            </div>
+                            <div class="skill" id="bloodlustSkill">
+                              <img
+                                src="/Assignments/UnforgedLegends/images/extraLuckSkill.ico"
+                                alt=""
+                              /><span class="tooltiptext"
+                                >Under construction</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <span style="font-size: small">
+                    Wizzard is Under Construction
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
           <button
@@ -115,6 +424,17 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <img
+          style="position: absolute; bottom: -30px; left: 0; width: 20%"
+          src="/Assignments/UnforgedLegends/images/fire.gif"
+          alt=""
+        />
+        <img
+          style="position: absolute; bottom: -30px; right: 0; width: 20%"
+          src="/Assignments/UnforgedLegends/images/fire.gif"
+          alt=""
+        />
+
         <div class="hint">
           Hint:
           <div id="randomHint">&emsp;Barbarian class can use two weapons</div>

@@ -103,3 +103,42 @@ a {
   height: 50px;
   margin: 1%;
 }
+
+.charTable tr th {
+  text-align: left;
+  width: 100px;
+}
+.charTable tr td {
+  text-align: right;
+}
+.skill > img {
+  width: 30px;
+  height: 30px;
+}
+.skill span {
+  display: none;
+  position: absolute;
+  font-size: x-small;
+  background: #333;
+  opacity: 90%;
+  color: #fff;
+  text-align: left;
+  border: 0.1px solid #070707;
+}
+.skill:hover span {
+  display: flex;
+}
+
+#mainLogo {
+  width: 300px;
+  margin: auto;
+  display: grid;
+}
+
+.mainMenu {
+  display: grid;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
