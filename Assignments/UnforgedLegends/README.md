@@ -1,5 +1,7 @@
 # 🏰 Unforged Legends
 
+https://github.com/Lukatami/2025-RTT-48/tree/main/Assignments/UnforgedLegends
+
 ![Unforged Legends Logo](./images/logoBlack.png)
 
 **Unforged Legends** is a fantasy-themed web project that serves as the foundation for a role-playing adventure hub. It provides an immersive UI for navigating character, locations, bestiary, and encyclopedia features — all wrapped in a dark, medieval aesthetic.
